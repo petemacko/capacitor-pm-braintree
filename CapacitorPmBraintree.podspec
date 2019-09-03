@@ -1,10 +1,10 @@
 
   Pod::Spec.new do |s|
-    s.name = 'CapacitorBraintree'
-    s.version = '1.0.1'
+    s.name = 'CapacitorPmBraintree'
+    s.version = '1.0.2'
     s.summary = 'Capacitor plugin for Braintree Payments'
     s.license = 'MIT'
-    s.homepage = 'https://github.com/petemacko/capacitor-braintree'
+    s.homepage = 'https://github.com/petemacko/capacitor-pm-braintree'
     s.author = 'Pete Macko'
     s.source = { :git => 'https://github.com/petemacko/capacitor-pm-braintree', :tag => s.version.to_s }
     s.source_files = 'ios/BraintreePlugin/**/*.{swift,h,m,c,cc,mm,cpp}'
