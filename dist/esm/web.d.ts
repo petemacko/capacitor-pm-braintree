@@ -10,7 +10,7 @@ export declare class BraintreeWeb extends WebPlugin implements IBraintreePlugin 
     setDisableAndroidPay(options: OptionOptions): Promise<void>;
     setDisableGooglePayment(options: OptionOptions): Promise<void>;
     presentModalPaymentUi(options: PaymentUiOptions): Promise<any>;
-    private createBuggerOffPromise;
+    private createGoAwayPromise;
 }
 declare const Braintree: BraintreeWeb;
 export { Braintree };

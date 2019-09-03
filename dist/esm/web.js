@@ -8,31 +8,31 @@ export class BraintreeWeb extends WebPlugin {
     }
     // @ts-ignore
     initialize(options) {
-        return this.createBuggerOffPromise();
+        return this.createGoAwayPromise();
     }
     // @ts-ignore
     setUseVaultManager(options) {
-        return this.createBuggerOffPromise();
+        return this.createGoAwayPromise();
     }
     // @ts-ignore
     setDisablePayPal(options) {
-        return this.createBuggerOffPromise();
+        return this.createGoAwayPromise();
     }
     // @ts-ignore
     setDisableVenmo(options) {
-        return this.createBuggerOffPromise();
+        return this.createGoAwayPromise();
     }
     // @ts-ignore
     setUseThreeDSecureVerification(options) {
-        return this.createBuggerOffPromise();
+        return this.createGoAwayPromise();
     }
     // @ts-ignore
     setDisableAndroidPay(options) {
-        return this.createBuggerOffPromise();
+        return this.createGoAwayPromise();
     }
     // @ts-ignore
     setDisableGooglePayment(options) {
-        return this.createBuggerOffPromise();
+        return this.createGoAwayPromise();
     }
     // @ts-ignore
     presentModalPaymentUi(options) {
@@ -42,7 +42,7 @@ export class BraintreeWeb extends WebPlugin {
             reject(msg);
         });
     }
-    createBuggerOffPromise() {
+    createGoAwayPromise() {
         return new Promise((_resolve, reject) => {
             const msg = "The BrainTree plugin doesn't plug in to the web. It only works on iOS/Android native.";
             console.log(msg);
