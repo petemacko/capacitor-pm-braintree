@@ -1,0 +1,70 @@
+PODS:
+  - Braintree/3D-Secure (4.27.1):
+    - Braintree/Card
+    - Braintree/Core
+  - Braintree/Apple-Pay (4.27.1):
+    - Braintree/Core
+  - Braintree/Card (4.27.1):
+    - Braintree/Core
+  - Braintree/Core (4.27.1)
+  - Braintree/PaymentFlow (4.27.1):
+    - Braintree/Card
+    - Braintree/Core
+    - Braintree/PayPalOneTouch
+  - Braintree/PayPal (4.27.1):
+    - Braintree/Core
+    - Braintree/PayPalOneTouch
+  - Braintree/PayPalDataCollector (4.27.1):
+    - Braintree/Core
+    - Braintree/PayPalUtils
+  - Braintree/PayPalOneTouch (4.27.1):
+    - Braintree/Core
+    - Braintree/PayPalDataCollector
+    - Braintree/PayPalUtils
+  - Braintree/PayPalUtils (4.27.1)
+  - Braintree/UnionPay (4.27.1):
+    - Braintree/Card
+    - Braintree/Core
+  - Braintree/Venmo (4.27.1):
+    - Braintree/Core
+    - Braintree/PayPalDataCollector
+  - BraintreeDropIn (7.4.0):
+    - BraintreeDropIn/DropIn (= 7.4.0)
+  - BraintreeDropIn/DropIn (7.4.0):
+    - Braintree/Card (~> 4.27)
+    - Braintree/Core (~> 4.27)
+    - Braintree/PaymentFlow (~> 4.27)
+    - Braintree/PayPal (~> 4.27)
+    - Braintree/UnionPay (~> 4.27)
+    - BraintreeDropIn/UIKit
+  - BraintreeDropIn/UIKit (7.4.0)
+  - Capacitor (1.1.1):
+    - CapacitorCordova (= 1.1.1)
+  - CapacitorCordova (1.1.1)
+
+DEPENDENCIES:
+  - Braintree/3D-Secure
+  - Braintree/Apple-Pay
+  - Braintree/Venmo
+  - BraintreeDropIn
+  - "Capacitor (from `../node_modules/@capacitor/ios`)"
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Braintree
+    - BraintreeDropIn
+    - CapacitorCordova
+
+EXTERNAL SOURCES:
+  Capacitor:
+    :path: "../node_modules/@capacitor/ios"
+
+SPEC CHECKSUMS:
+  Braintree: eeb6e5aa9a893cbd6e7059fac708297844f3cce6
+  BraintreeDropIn: ee413ce4f94b86179e5ff3f98eb847219610bb96
+  Capacitor: f245413edff86ebf3d18bf76cadaee4be58b4a04
+  CapacitorCordova: 25811fd90c0ea23ea135a42a217d1918873fa566
+
+PODFILE CHECKSUM: 4fa9cdbe814406e65e15c9178f3fc9effe2a9647
+
+COCOAPODS: 1.7.2

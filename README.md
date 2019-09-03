@@ -1,2 +1,4 @@
 # capacitor-pm-braintree
-Capacitor Braintree Payments plugin
+Capacitor plugin that provides limited support for the Braintree Payments dropin UI.
+
+ 

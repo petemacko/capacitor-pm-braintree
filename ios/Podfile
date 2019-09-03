@@ -1,0 +1,17 @@
+platform :ios, '11.0'
+project 'CapacitorPmBraintree.xcodeproj'
+
+target 'BraintreePlugin' do
+  use_frameworks!
+  pod 'Capacitor', :path => '../node_modules/@capacitor/ios'
+  pod 'BraintreeDropIn'
+  pod 'Braintree/Apple-Pay'
+  pod 'Braintree/Venmo'
+  pod 'Braintree/3D-Secure'
+end
+
+target 'BraintreePluginTests' do
+  use_frameworks!
+
+  pod 'Capacitor', :path => '../node_modules/@capacitor/ios'
+end
