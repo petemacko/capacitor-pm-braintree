@@ -122,14 +122,14 @@ public class Braintree extends Plugin {
             return;
         }
 
-        String amount = call.getString("amount");
-        if (amount == null || amount.length() == 0) {
-            call.error("Bad input - 'amount' is required");
-            return;
-        }
+//         String amount = call.getString("amount");
+//         if (amount == null || amount.length() == 0) {
+//             call.error("Bad input - 'amount' is required");
+//             return;
+//         }
 
         DropInRequest paymentRequest = new DropInRequest().clientToken(tokenValue);
-        paymentRequest.amount(amount);
+        //paymentRequest.amount(amount);
         paymentRequest.vaultManager(useVaultManager);
         if (disablePayPal) paymentRequest.disablePayPal();
         if (disableVenmo) paymentRequest.disableVenmo();

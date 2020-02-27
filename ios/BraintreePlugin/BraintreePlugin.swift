@@ -176,14 +176,14 @@ public class BraintreePlugin: CAPPlugin {
             return
         }
         
-        guard let amount = call.getString("amount") else {
-            call.error("Bad input - 'amount' is required")
-            return
-        }
+//         guard let amount = call.getString("amount") else {
+//             call.error("Bad input - 'amount' is required")
+//             return
+//         }
         
         let paymentRequest = BTDropInRequest()
         //TODO: Investigate changes around new deprecation of 'amount' and 3d secure request
-        paymentRequest.amount = amount
+        //paymentRequest.amount = amount
         paymentRequest.applePayDisabled = applePayInitialized
         paymentRequest.vaultManager = useVaultManager
         paymentRequest.paypalDisabled = disablePayPal
