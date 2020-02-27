@@ -1,7 +1,7 @@
 
   Pod::Spec.new do |s|
     s.name = 'CapacitorPmBraintree'
-    s.version = '1.0.2'
+    s.version = '1.0.3'
     s.summary = 'Capacitor plugin for Braintree Payments'
     s.license = 'MIT'
     s.homepage = 'https://github.com/petemacko/capacitor-pm-braintree'
