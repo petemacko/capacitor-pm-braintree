@@ -1,6 +1,6 @@
 {
   "name": "capacitor-pm-braintree",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Capacitor plugin for Braintree Payments",
   "main": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
