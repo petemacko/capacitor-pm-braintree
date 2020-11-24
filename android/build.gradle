@@ -37,15 +37,23 @@ repositories {
     google()
     jcenter()
     mavenCentral()
+    maven {
+        url  "https://cardinalcommerce.bintray.com/android"
+        credentials {
+            username 'braintree-team-sdk@cardinalcommerce'
+            password '220cc9476025679c4e5c843666c27d97cfb0f951'
+        }
+    }
 }
 
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'com.braintreepayments.api:drop-in:3.7.1'
+    implementation 'com.braintreepayments.api:drop-in:5.0.1'
     implementation 'io.card:android-sdk:5.5.1'
     implementation project(':capacitor-android')
     implementation "androidx.coordinatorlayout:coordinatorlayout:1.1.0"
+    implementation 'androidx.appcompat:appcompat:1.2.0'
 
 }
 

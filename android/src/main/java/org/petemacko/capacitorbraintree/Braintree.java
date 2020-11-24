@@ -133,7 +133,7 @@ public class Braintree extends Plugin {
         paymentRequest.vaultManager(useVaultManager);
         if (disablePayPal) paymentRequest.disablePayPal();
         if (disableVenmo) paymentRequest.disableVenmo();
-        if (disableAndroidPay) paymentRequest.disableAndroidPay();
+        //if (disableAndroidPay) paymentRequest.disableAndroidPay();
         if (disableGooglePayment) paymentRequest.disableGooglePayment();
         paymentRequest.requestThreeDSecureVerification(useThreeDSecureVerification);
 
